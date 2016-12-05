@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shades of Purple</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="../../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>
+<!--Page Specific Styling for mobile-->
+<style>
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="folio_wrap">
+	
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-210.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-210.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/015.JPG	" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/015.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/046.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/046.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/049.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/049.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/050.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/050.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/102.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/102.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/141.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/141.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/147.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/147.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/150.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/150.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-151.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-151.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/167.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/167.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-1.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-1.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-100.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-100.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-119.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-119.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-127.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-127.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-137.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-137.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-140.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-140.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-146.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-146.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-27.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-27.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-163.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-163.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-173.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-173.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-180.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-180.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-203.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-203.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_two">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-217.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-217.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_two">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-94.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-94.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-46.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-46.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-50.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-50.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-53.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-53.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-57.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-57.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-74.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-74.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-78.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-78.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Shades of Purple styled shoot/p-109.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Shades of Purple styled shoot/p-109.JPG"></a>
+	</div>
+	
+	
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>

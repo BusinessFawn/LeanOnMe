@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lindsay</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Meet Lindsay, Lean On Me’s owner and principle wedding planner, to learn how sweet tea fuels her mission and her approach exceeds our couples’ expectations.">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne	= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo	= $('.second_drop');
+		pulled		= false;
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();
+		if(!pulled){
+			subShowOne.fadeToggle();
+			subShowOne.fadeToggle();
+			subShowTwo.fadeToggle();
+			subShowTwo.fadeToggle();
+			pulled=true;
+		}
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+});
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+
+
+<article id="about_wrap">
+<h2>I See My Couples Not Just Their Beautiful Wedding Day</h2>
+<p>I see the way Katherine’s tension eases and her mind slows as Beaux gently places his steady and secure hand on the small of her back.</p>
+<p>I adore how Ashley reminds Cordt not to take life too seriously, and I’m always excited to hear the stories from Jordan and Lucas’s traveling adventures around the world.</p>
+<p>When I plan and design weddings, my inspiration comes from the couple—from their relationship, what they enjoy together, and how they love each other in the simple, often overlooked ways.</p>
+<div id="lower_wrap">
+<div id="about_img">
+	<img src="../../images/Lean on Me Headshots 2016-16.jpg"/>
+</div>
+<div id="lower_about">
+<h2>Hi there, friend! I’m Lindsay</h2>
+<p>I’m LOM’s owner and principle wedding planner, meaning I pour my heart, soul, and creativity into every wedding. The memorable experience I create for my clients and their guests is an expression of their love, personalities, style, and story.</p>
+<p>I believe Southern hospitality is at the root of every successful soiree. To me, weddings are an intimate expression of God’s love and life’s grandest joys. Some of my biggest joys come in the form of my little boy’s playful charm and my hubby’s steadfast love and friendship.</p>
+<p>I kick back in a quaint space where there are more stars than streetlights and plenty of elbow room and country comfort. A blend of contradictions, you’ll find me sipping too much sweet tea from my Mema’s antique china or savoring the grass beneath my bare feet in the prettiest Badgley Mischka gown.</p>
+<p>I grew up being my friends’ secret keeper—their trusted, walking diary, of sorts. Still today, I soak up stories and take in the simplicity of the day-to-day.  I’ve based my business approach around slowing down, seeing, and listening. Because, it’s when I stop and listen that I catch hold of my couples’ vision and dreams.</p>
+<p>Lean On Me was birthed out of my dream to take the true authenticity within every love story and make it the inspiration behind a celebration of lasting commitment.</p>
+<p>Explore our services to see how we can take your story and create a styled and well-coordinated experience that lingers for a lifetime.</p>
+</div>
+</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+</body>
+</html>

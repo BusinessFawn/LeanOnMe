@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ashley</title>
+<meta name="viewport" content="width=100%, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="../../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>
+<!--Page Specific Styling-->
+<style>
+	
+	#wide_photo_wrap:nth-child(22) {
+		order:1;
+	}
+	#tall_photo_wrap:nth-child(23) {
+		order:2;
+	}
+	#tall_photo_wrap:nth-child(24) {
+		order:3;
+	}
+	#tall_photo_wrap:nth-child(25) {
+		order:4;
+	}
+	#tall_photo_wrap:nth-child(26) {
+		order:5;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="folio_wrap">
+	
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1048.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1048.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1003.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1003.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1018.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1018.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1020.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1020.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1021.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1021.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1022.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1022.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1024.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1024.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1044.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1044.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1045.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1045.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1047.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1047.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1051.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1051.JPG"></a>
+	</div>
+
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1058.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1058.JPG"></a>
+	</div>
+			<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1054.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley bridals/AshleyTempleBridals-1054.JPG"></a>
+	</div>
+			<!--new album-->
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1016.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1016.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1024.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1024.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1026.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1026.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1030.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1030.JPG"></a>
+	</div>
+		<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1031.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1031.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1033.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1033.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1034.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1034.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1035.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1035.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1029.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1029.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1138.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1138.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1175.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1175.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1180.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1180.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1368.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1368.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_one">
+		<a href="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1375.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Ashley wedding/AshleyandCordtWedding-1375.JPG"></a>
+	</div>
+
+	
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>

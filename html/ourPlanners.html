@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Explore Houston wedding planner, Lean On Me Events, for wedding planning in the area and beyond that offers Southern hospitality, creative artistry, and faith-driven values.">
+<link rel="stylesheet" type="text/css" href="../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico">
+<!--required for all jquery-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../style/nyroModal.css" type="text/css" media="screen" />
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop" id="subShow">
+		<li>
+			<a href="ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop" id="subShow">
+		<li>
+			<a href="ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="about_wrap">
+<h2>Wedding Planning that Serves and Finds Distinct Inspiration from You as a Couple</h2>
+<p>You love nice things and simple beauty, but being nice and finding beauty in the <i>simply</i> overlooked is just as important to you—if not more.</p>
+<p>A sweet belle who is steeped like a teabag in Southern hospitality, you know the key to a great celebration is warmth, friendship, and authentic belly laughs.</p>
+<p>You’re not looking for a wedding planner, you’re seeking a trusted friend who understands the depth of who you are as a couple and can grasp what really matters to you.</p>
+<p>You want an intimate and celebratory wedding where your love spills over onto every guest. BUT, you know the best part of your journey is the adventure that awaits you and your new husband when you exit your reception.</p>
+<!--<h2>We Make Your Wedding Experience a Reflection of Your Love Story and Values</h2>
+<p>At Lean On Me Events, we understand your need to know that your wedding is in capable and reliable hands. We also understand your desire to have your vision and hopes truly known.</p>
+<p>We make sure your wedding bursts with fullness, but it’s not about the over-the-top arrangements or extravagant drapery and lighting (although that is important). Your wedding truly comes to life, because you the couple are our muse, and creative artistry and organization are our intuitive and learned gifts.</p>
+<p>We’ve been handcrafting well-orchestrated weddings and serving heart-intertwined couples since 2011. In those years, we’ve learned that as much as your wedding is about the experience of uniting in front of family and friends, it’s also about spending time with those loved ones from the moment one short, but powerful question sets things in motion.</p>
+<p>We offer month-of, partial planning, and full-service planning and design packages. If you’re a gal who’s enlisted an entourage of helpers, we work with you, but we also help you put yourself in each person’s shoes to make sure you make the right decision for your wedding day.</p>
+<p>Explore our services page to discover how we can serve you on your wedding day, so you’re at ease when you step into your dress and every moment before and after.</p>-->
+<div id="planner_wrap">
+	<div class="planner_class">
+		<a href="teamDirectory/lindsay.html">
+			<img src="../images/Lean on Me Headshots 2016-16.jpg">
+			<h2>Lindsay</h2>
+		</a>
+	</div>
+	<div class="planner_class">
+		<a href="teamDirectory/brittany.html">
+			<img src="../images/Lean on Me Headshots 2016-118.jpg">
+			<h2>Brittany</h2>
+		</a>
+	</div>
+	<div class="planner_class">
+		<a href="teamDirectory/leah.html">
+			<img src="../images/Lean on Me Headshots 2016-82.jpg">
+			<h2>Leah</h2>
+		</a>
+	</div>
+	<div class="planner_class">
+		<a href="teamDirectory/shelby.html">
+			<img src="../images/Lean on Me Headshots 2016-150.jpg">
+			<h2>Shelby</h2>
+		</a>
+	</div>
+</div>
+
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+</body>
+</html>

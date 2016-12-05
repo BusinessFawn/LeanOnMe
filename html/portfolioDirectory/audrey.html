@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audrey</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="../../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>
+<!--Page Specific Styling for mobile-->
+<style>
+	
+
+	#wide_photo_wrap:nth-child(6) {
+		order:1;
+	}
+	#tall_photo_wrap:nth-child(5) {
+		order:2;
+	}
+	#tall_photo_wrap:nth-child(7) {
+		order:3;
+	}
+	#tall_photo_wrap:nth-child(8) {
+		order:4;
+	}
+	#tall_photo_wrap:nth-child(9) {
+		order:15;
+	}
+	#tall_photo_wrap:nth-child(10) {
+		order:6;
+	}
+	#tall_photo_wrap:nth-child(11) {
+		order:7;
+	}
+	#tall_photo_wrap:nth-child(12) {
+		order:8;
+	}
+	#tall_photo_wrap:nth-child(13) {
+		order:16;
+	}
+	#tall_photo_wrap:nth-child(14) {
+		order:10;
+	}
+	#tall_photo_wrap:nth-child(15) {
+		order:11;
+	}
+	#tall_photo_wrap:nth-child(16) {
+		order:12;
+	}
+	#tall_photo_wrap:nth-child(17) {
+		order:17;
+	}
+	#tall_photo_wrap:nth-child(18) {
+		order:14;
+	}
+	#wide_photo_wrap:nth-child(19) {
+		order:5;
+	}
+	#wide_photo_wrap:nth-child(20) {
+		order:9;
+	}
+	#wide_photo_wrap:nth-child(21) {
+		order:18;
+	}
+	#wide_photo_wrap:nth-child(22) {
+		order:13;
+	}
+	#wide_photo_wrap:nth-child(23) {
+		order:19;
+	}
+	
+	
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="folio_wrap">
+	
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1033.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1033.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1001.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1001.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1002.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1002.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1026.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1026.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1031.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1031.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1036.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1036.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1034.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1034.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1041.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey bridals/AudreyPerezBridals-1041.JPG"></a>
+	</div>
+			<!--new album-->
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1035.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1035.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1040.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1040.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1330.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1330.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1400.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1400.JPG"></a>
+	</div>
+		<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1404.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1404.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1433.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1433.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1502.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1502.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1531.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1531.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1765.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1765.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1884.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1884.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1087.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1087.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1316.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1316.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1321.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1321.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1332.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1332.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1525.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Audrey wedding/AudreyandPhilipWedding-1525.JPG"></a>
+	</div>
+
+	
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>

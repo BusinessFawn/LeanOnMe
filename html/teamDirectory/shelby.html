@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Meet wedding planner Shelby and discover why her powerhouse productivity and love for all things pretty is exactly what your wedding needs.">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne	= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo	= $('.second_drop');
+		pulled		= false;
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();
+		if(!pulled){
+			subShowOne.fadeToggle();
+			subShowOne.fadeToggle();
+			subShowTwo.fadeToggle();
+			subShowTwo.fadeToggle();
+			pulled=true;
+		}
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+});
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="about_wrap">
+<h2>Gimmee Your Wedding, Doll—Let Me Show You Why I Believe Wedding Weekends are the Best Weekends</h2>
+<p>Hayyy! You’re getting married! “Goin’ to the chapel and you’re…gonnnna get maaa-aaaair-aaiiir-ied.</p>
+<p>I just want to give you a huge hug right now and tell you to go sit down and take a load off. At LOM, we’ll take such good care of you. You’ll truly enjoy your day and your engagement leading up to it.</p>
+<p>I’ll be workin’ my magic in the background (in my usual cool, calm, and collected manner) to make sure your fairytale wedding comes true.</p>
+<p>Our LOM owner (whom I adore) says I can knock out a to-do list faster than she can write it.</p>
+<div id="lower_wrap">
+<div id="about_img">
+	<img src="../../images/Lean on Me Headshots 2016-150.jpg"/>
+</div>
+<div id="lower_about">
+<h2>What can I say?</h2>
+<p>I love productivity AND I love pretty. </p>
+<p>Better yet—I love productively making the pretty happen for you.</p>
+<p>My knack is to thoughtfully think through every logistic for your wedding day and execute it flawlessly.</p>
+<p>My favorite weekends are wedding weekends, because there’s something electrifying about the buzz of coordinating an event and then watching eyes twinkle as they dance from one fancy piece to another, taking it allllll in.</p>
+<p>There’s the bride, there’s the bubbly, there’s the partaay…there’s so much good stuff.</p>
+<p>I love a good hashtag, so if I were to “sum me up,” here’s how it’d look (in no particular order):</p>
+<p>#jesus #realhousewives #friendship #chocolatesprinkledonuts #loyalty #furbabies #iheartdogshelters  #disneyland #disneyprincesses #family #biblejournaling #funlover</p>
+<p>Let’s get the job done right AND have some fun in the process. Head over to the Lean On Me services page to find out how we can knock out your wedding to-dos, so you can breathe easier.</p>
+</div>
+</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+</body>
+</html>

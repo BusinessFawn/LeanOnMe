@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Explore Houston wedding planner, Lean On Me Events, for wedding planning in the area and beyond that offers Southern hospitality, creative artistry, and faith-driven values.">
+<link rel="stylesheet" type="text/css" href="../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico">
+<!--required for all jquery-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../style/nyroModal.css" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="../js/jquery.nyroModal.custom.js"></script>-->
+<!--[if IE 6]>
+	<script type="text/javascript" src="../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop" id="subShow">
+		<li>
+			<a href="ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop" id="subShow">
+		<li>
+			<a href="ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="services_wrap">
+	
+<h2>Your Heart is Meant to Prosper Not Perish Under Planning Pressure.</h2>
+<p>As you collect wedding planning checklists and read through wedding blogs, you’re pretty sure you can handle most everything if you can come up with the time and hire a little bit of help.
+But then—just like that—you’re knee deep into planning, up to your eyeballs in to-dos, and your head is spinning from wedding research. Date nights become planning meetings and girls’ nights become failed crafting experiments that leave you a hot mess with hot glue burns.
+Many of my brides have been exactly where you are. 
+They thought with some DIY spirit, creativity, supportive friends and family, and maybe some month-of professional planning, they could handcraft the wedding of their dreams. A month or two in, they call me in a panic begging for extra help.
+Sweet bride-to-be, let’s figure out exactly what you need, based on your style and personality, and get you some planning help from the get-go, so you’re not overwhelmed because you don’t quite know what you’re getting yourself into.
+You shouldn’t have to stress about creating a beautiful wedding. 
+Yours was meant to be an experience to be enjoyed, and you should prosper not wither under planning pressure. </p>
+<h2>Southern Hospitality and Servanthood for Such a Time As This</h2>
+<p>If your biggest desire for your wedding is that:</p>
+	<ul id="check_marks">
+		<li>It shines the spotlight on your beautiful love story</li>
+		<li>You, your family, friends, and fiancé can truly enjoy your engagement journey, and celebrate your wedding day stress free</li>
+		<li>Your wedding experience and design encompasses your creative vision and draws inspiration from you as a couple</li>
+		<li>Your guests are received with Southern hospitality, upbeat entertainment, and an unforgettable celebration</li>
+	</ul>
+<p>You’re not here by accident.</p>
+<h2><i>As a wedding planner who understands your values, I know that, ultimately, your wedding is about soooo much more than what you’re planning for.</i></h2>
+<p>Hi friend, I’m Lindsay!</p>
+<p>At Lean On Me Events, we use our intuition, creative artistry, gifts, and learned experience to plan your wedding. We draw inspiration from you as a couple and commit ourselves to coordinating a Southern soiree that’s an expression of your love story and roots.</p>
+<h2>We’ve created values-driven wedding planning packages that support you, so you have more time to treasure your engagement and wedding day.</h2>
+<p>“As the mother of the bride, I strongly recommend hiring Lindsay as a wedding planner. With only 6 months to plan our daughter's wedding, Lindsay was the best "must have" gift that I could have given to myself and the bride to be! Not only did Lindsay exhibit such a great "take charge" attitude, but she's very gifted with the ability to calm the nerves! She was always just a phone call away when we needed her. She had the answers to all of our needs and always did her job with such professionalism and grace. Lindsay was such a blessing to our family.” – Peggy, LOM Mother of the Bride</p>
+<p>“Lindsay is a miracle worker! I seriously do not think my wedding would have happened if we did not have her. She kept us in line on budget, had all of our to-dos organized, and introduced me to vendors I would have never met. Over the past 3 years, Lindsay has become part of our family. She has worked with my cousins and sister, so I was honored to have her help me plan my wedding. She was incredibly patient with my mom and I and our 25 emails a day. The week of the wedding, she made sure all last minute details were taken care of. The day of the wedding, she kept everyone on time and the day was stress free. I cannot recommend Lean On Me Events enough - your wedding is in good hands with Lindsay and her team! – Christine, LOM Bride</p>
+<h2>Here’s how we serve you:</h2>
+<h2>Full-Service Wedding Planning and Design</h2>
+<p>Brides with bursting schedules who know they need wedding planning support from start to finish are the perfect fit for our full-service package. We help you book all of your must-haves with vendors who match your wedding wishes to a ‘T’ and help you stay on budget. You remain in control and are informed with up-to-date information through our online planning portal and regular contact with us. You receive style boards and customized design based on your creative sessions with us, so your wedding vision becomes a remarkable realty. From researching and setting up meetings with vendors to preparing guest welcome bags, we make sure your wedding vision becomes an experience you and your fiancé remember for the rest of your lives.</p>
+<h2>Partial Planning: 6 months and 3 months</h2>
+<p>Brides who dance the line between DIY and wanting an expert’s guidance and support love our partial planning package. Partial planning begins 6 months or 3 months leading up to your wedding and includes vendor research for 1 or 3 vendor categories(depending on the package), style board concepts to help you create a cohesive design, timelines and diagrams, wedding day production, and more.</p>
+<h2>Month-of Coordination</h2>
+<p>For Type A list makers and go-getters who want to pass the torch on their wedding day, month of coordination is a wonderful fit. The month before your wedding, you receive assistance tying up loose ends and finalizing your headcount. We create wedding day timelines and diagrams as well as provide a lead wedding planner and assistant for rehearsal dinner and wedding day production. You plan your wedding and we make sure you and your family get to enjoy it without having to run ragged or stress about who and what goes where and when.</p>
+
+<p>Our packages start at 2,100USD.<br>
+We also offer A La Carte options.</p>
+
+<h2><a href="connect.html">Schedule my complimentary creative consultation</a></h2>
+<h2>Ready to hire a wedding planner who:</h2>
+	<ul id="check_marks"><!--check marks-->
+		<li>Listens and soaks up your story, so your wedding is a true reflection of your personality, traditions, values, and love?</li>
+		<li>Offers design concepts and style boards, so you have absolute clarity about the overall experience and vision for your wedding from florals to linens to lighting and décor?</li>
+		<li>Understands the importance of Southern hospitality, warmth, generosity, and the most impeccable celebration?</li>
+		<li>Offers a tech-savvy planning portal, timelines, diagrams, and more for complete organization and seamless coordination?</li>
+	</ul>
+<!--<h2>Frequently Asked Questions</h2>
+<h2>Do you think I’ll be able to get away with having my mom and friends help?</h2>
+<p>It’s so much fun to daydream about the bonding you, your family, and friends will have planning your wedding, but the truth is—the daydream never usually goes as planned. It’s great to bond over some to-dos, but I always tell my brides to consider how nice it would be to get to enjoy dress shopping, picking out décor, and finalizing vendors without having to deal with the bottomless admin that goes with it. Having your close friends and family actually get to enjoy your wedding day is one thing, but having them get to enjoy the journey—stress-free—along with you is another.</p>
+<h2>Will I lose control of my wedding?</h2>
+<p>Of course not! A wedding planner’s job is to come alongside you and take the burden off of your shoulders. You literally lean on us, but you have control over everything from picking your invitations to picking your vendors to your wedding design. It’s your wedding. You cast the vision and we do the research, leg work, and coordination necessary to make it happen.</p>
+<h2>My wedding venue has a coordinator and I’ve heard that I can just use him or her. Is that correct?</h2>
+<p>The most important thing to remember about your venue coordinator is that he or she is in charge of everything that happens inside of the venue. He or she is responsible for making sure your space is ready, you have everything you need in terms of your reservation, and that your space is returned to its usual condition after the wedding. Your venue coordinator will not help you plan your wedding beyond that. Sure, you might get some vendor recommendations, but the venue coordinator looks out for the venue. A wedding planner looks out for you.</p>
+<h2>Do I need the full-service package or will I be fine with a smaller package?</h2>
+<p>This all depends on your wedding vision, desires, and the amount of time you have. Most of my brides don’t realize all that goes into planning a wedding until after they’ve started the planning process. A typical wedding takes a wedding planner roughly 100+ hours to plan. Our full-service planning package is our most comprehensive and is great for brides who want design, planning, budget and vendor guidance, and support throughout the entire journey. It might not be a good fit for what you’re looking for, but we’ll discover that in your complimentary creative session and be able to recommend the right package for you.</p>
+<h2>Do you offer payment plans?</h2>
+<p>YES! Custom payment plans are available!</p>
+<h2><a href="connect.html">Schedule my complimentary creative consultation</a></h2>-->
+
+
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>

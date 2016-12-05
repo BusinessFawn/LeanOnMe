@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portolio</title>
+<meta name="viewport" content="width=max-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../style/LOM.css">
+<!--<link rel="stylesheet" type="text/css" href="../style/normalize.css">-->
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico">
+<!--required for all jquery-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('nav ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../styles/nyroModal.css" type="text/css" media="screen" />
+
+
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul>
+<li id="first"><a href=#>H<span>ome</span></a></li>
+<li><a href=#>A<span>bout</span></a></li>
+<li><a href=#>P<span>ortfolio</span></a></li>
+<li><a href=#>S<span>ervices</span></a></li>
+<li><a href=#>C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="folio_wrap">
+	
+	<div id="photo_wrap">
+		<a href="portfolioDirectory/allison.html" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+	<div id="photo_wrap">
+		<a href="../images/demoImage.jpg" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+	<div id="photo_wrap">
+		<a href="../images/demoImage.jpg" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+	<div id="photo_wrap">
+		<a href="../images/demoImage.jpg" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+	<div id="photo_wrap">
+		<a href="../images/demoImage.jpg" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+	<div id="photo_wrap">
+		<a href="../images/demoImage.jpg" class="nyroModal" title=""><img src="../images/demoImage.jpg"></a>
+	</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../images/Pin.png">
+    </a>
+</div>
+</footer>
+</div>
+</body>
+</html>

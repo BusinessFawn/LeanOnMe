@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Allison</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		subShowOne.fadeToggle();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeToggle();
+		subShowTwo.fadeToggle();
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="../../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>
+<!--Page Specific Styling-->
+<style>
+	
+	/*#tall_photo_wrap:nth-child(22) {
+		order:4
+	}
+	#tall_photo_wrap:nth-child(21) {
+		order:5
+	}
+	#tall_photo_wrap:nth-child(20) {
+		order:6
+	}
+	#tall_photo_wrap:nth-child(19) {
+		order:1
+	}
+
+	#wide_photo_wrap:nth-child(18) {
+		order:2;
+	}*/
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="folio_wrap">
+	
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1641.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1641.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1001.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1001.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1002.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1002.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1006.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1006.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1010.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1010.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1017.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1017.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1034.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1034.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1048.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1048.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1112.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison bridals/AllisonWestBridals-1112.JPG"></a>
+	</div>
+	<!--new album-->
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1228.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1228.JPG"></a>
+	</div>
+
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1250.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1250.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1256.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1256.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1309.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1309.JPG"></a>
+	</div>
+	<div id="wide_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/11731613_702627909838720_7082798662421210342_o.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/11731613_702627909838720_7082798662421210342_o.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1329.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1329.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1335.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1335.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1354.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1354.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1648.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1648.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_three">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1661.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1661.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_three">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1686.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1686.JPG"></a>
+	</div>
+	<div id="tall_photo_wrap" class="last_three">
+		<a href="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1689.JPG" class="nyroModal" title="">
+			<img src="../../images/portfolioImages/Allison wedding/AllisonandFrancisco-1689.JPG"></a>
+	</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>

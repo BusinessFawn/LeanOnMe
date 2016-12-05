@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Meet LOM wedding planner Brittany who has an infectious laugh and a heart that moves mountains to make every wedding a joyful experience.">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne	= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo	= $('.second_drop');
+		pulled		= false;
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();
+		if(!pulled){
+			subShowOne.fadeToggle();
+			subShowOne.fadeToggle();
+			subShowTwo.fadeToggle();
+			subShowTwo.fadeToggle();
+			pulled=true;
+		}
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+});
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="about_wrap">
+<h2>From the Bottom of My Heart, I Love to Make Your Wedding Dreams Come True</h2>
+<p>This moment in time is soooo surreal, isn’t it? The love of your life has just asked you to spend a lifetime side-by-side in marriage. It makes me so happy to think of all the excitement that’s running through your mind and heart right now.</p>
+<p>I don’t want your wedding to-do list to sweep in and steal that joy. I’d rather you spend more time falling even deeper in love every single day than falling into a state of frenzy over all that needs to come together.</p>
+<p>That’s my job, and I love it! My heart bursts a little each time I think about the opportunity I have to make your wedding dreams come true.</p>
+<div id="lower_wrap">
+<div id="about_img">
+	<img src="../../images/Lean on Me Headshots 2016-118.jpg"/>
+</div>
+<div id="lower_about">
+<h2>Hi lovebug, I’m Brittany!</h2>
+<p>I’m the planner who likes to make sure everything for your wedding day is easy, efficient, and organized, so you get to enjoy being in the spotlight. Just think…once you get to the end of the aisle, you get to be with the man you’ve dreamed of. I make sure you get to focus on that instead of being preoccupied with vendor setup, timelines, or whether your centerpieces are just right.</p>
+<p>I love big, laugh big, and serve big, which is exactly why planning weddings is the perfect fit. In my free time, you’ll find me volunteering at my church or spending quality time with family and friends. I laugh at just about anything and always try to keep things lighthearted and fun.</p>
+<p>I’d be honored to make your wedding dreams come to life right before your eyes. Check out our services to learn more.</p>
+</div>
+</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+</body>
+</html>

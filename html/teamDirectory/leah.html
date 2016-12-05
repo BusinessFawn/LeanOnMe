@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Meet LOM wedding planner Leah to find out how her welcoming heart and unbreakable commitment ensures you have the engagement and wedding you’ve always dreamed of.">
+<link rel="stylesheet" type="text/css" href="../../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico">
+<!--required for all jquery-->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne	= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo	= $('.second_drop');
+		pulled		= false;
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();
+		if(!pulled){
+			subShowOne.fadeToggle();
+			subShowOne.fadeToggle();
+			subShowTwo.fadeToggle();
+			subShowTwo.fadeToggle();
+			pulled=true;
+		}
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+});
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../../style/nyroModal.css" type="text/css" media="screen" />
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop">
+		<li>
+			<a href="../ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="../faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop">
+		<li>
+			<a href="../ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="../ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="../portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="../connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="about_wrap">
+<h2>I Want to See You Laugh and Watch You Enjoy the Beauty in Every Moment</h2>
+<p>From the moment you got engaged, you stepped into the role of bride-to-be. Soon, you’ll roll out of bed, greet the sun, and embrace the new day as a bride.</p>
+<p>Underneath your new identity—when it’s all stripped away—there’s just a woman who wants to experience deep love and the wonder, excitement, and joy of pledging her life to her best friend.</p>
+<p>If there’s anything I’ve learned in my time as a wedding planner, it’s that sometimes your new role comes with more than joy, excitement, and wonder. </p>
+<p>Sometimes, it’s filled with stress, fear, and anxiety. Sometimes, planning for a wedding feels heavy and overwhelming. </p>
+<p>I don’t want that for you. I want to see you laugh and overflow with giddiness. I want you to experience the beauty in every present moment, because you’re surrounded by caring people who lift you up. </p>
+<p>As your wedding planner, it’s my biggest joy to come alongside you, to welcome you into our Lean On Me community, and to support you. </p>
+<div id="lower_wrap">
+<div id="about_img">
+	<img src="../../images/Lean on Me Headshots 2016-82.jpg"/>
+</div>
+<div id="lower_about">
+<h2>Hi, Dear Bride—I’m Leah!</h2>
+<p>I’ve had my own “Pinterest” binder since I was 15. I used to cut ideas out of magazines or take pictures of beautiful homes and categorize them on scrap paper. I’ve always loved decorating a space and making it cozy and beautiful. </p>
+<p>My husband and I talk a lot about our dog and cat, Daisy and Kiki. We sponsor two children through Compassion International and contribute to the awareness of animal cruelty in Gambia, Africa. </p>
+<p>I believe in “professional silliness” and find ways to inject light-hearted laughter into your planning experience. </p>
+<p>Meeting new people and hearing their stories is one of my favorite things, and I’d love to hear all about yours. Check out our services page to learn more and then reach out to us. </p>
+</div>
+</div>
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services</title>
+<meta name="viewport" content="width=100, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Explore Houston wedding planner, Lean On Me Events, for wedding planning in the area and beyond that offers Southern hospitality, creative artistry, and faith-driven values.">
+<link rel="stylesheet" type="text/css" href="../style/LOM.css">
+<link rel="stylesheet" type="text/css" href="../style/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico">
+<!--required for all jquery-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!--This is the script that calls the Jquery Library-->
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('#firstMenu');  
+        menuHeight  = menu.height();
+		subPullOne	= $('#subPullOne');
+		subShowOne		= $('.first_drop');
+		subPullTwo	= $('#subPullTwo');
+		subShowTwo		= $('.second_drop');
+		pulled 		=false;
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+		if(!pulled){
+			subShowOne.fadeToggle();
+			subShowOne.fadeToggle();
+			subShowTwo.fadeToggle();
+			subShowTwo.fadeToggle();
+			pulled=true;
+		}
+		menu.slideToggle();
+    });
+	$(subPullOne).on('click', function(e) {
+		e.preventDefault();
+		subShowOne.fadeToggle();
+		subShowTwo.fadeOut();
+	});
+	$(subPullTwo).on('click', function(e) {
+		e.preventDefault();
+		subShowTwo.fadeToggle();
+		subShowOne.fadeOut();
+	});
+}); 
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');
+    }  
+});
+</script>
+
+<!--image popups-->
+<link rel="stylesheet" href="../style/nyroModal.css" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="../js/jquery.nyroModal.custom.js"></script>-->
+<!--[if IE 6]>
+	<script type="text/javascript" src="../js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+<!--<script type="text/javascript">
+$(function() {
+  $('.nyroModal').nyroModal();
+});
+</script>-->
+<!--Page Specific Styling-->
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<header>
+<img src="../images/logo.png">
+</header>
+<nav>
+<hr>
+<ul id="firstMenu">
+<li id="first"><a href="../index.html">H<span>ome</span></a></li>
+<li>
+	<a href="#" id="subPullOne">S<span>ervices</span>
+	</a>
+	<ul class="first_drop" id="subShow">
+		<li>
+			<a href="ourPackages.html">O<span>ur Packages</span></a>
+		</li>
+		<li>
+			<a href="faq.html">F<span>AQ</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="#" id="subPullTwo">A<span>bout</span></a>
+	<ul class="second_drop" id="subShow">
+		<li>
+			<a href="ourHeart.html">O<span>ur Heart</span></a>
+		</li>
+		<li>
+			<a href="ourPlanners.html">O<span>ur Planners</span></a>
+		</li>
+	</ul>
+</li>
+<li><a href="portfolio.html">P<span>ortfolio</span></a></li>
+<!--<li><a href="faq.html">F<span>AQ</span></a></li>-->
+<li><a href="connect.html">C<span>onnect</span></a></li>
+</ul>
+<hr>
+ <!--mobile nav-->   
+<a href="#" id="pull"><span><img src="../images/Hamburger.png"></span> <div id="navWords">Lean on Me</div></a>
+
+</nav>
+<!--/mobile nav-->
+
+<article id="services_wrap">
+<h2>Frequently Asked Questions</h2><!--center-->
+<h2>Do you think I’ll be able to get away with having my mom and friends help?</h2>
+<p>It’s so much fun to daydream about the bonding you, your family, and friends will have planning your wedding, but the truth is—the daydream never usually goes as planned. It’s great to bond over some to-dos, but I always tell my brides to consider how nice it would be to get to enjoy dress shopping, picking out décor, and finalizing vendors without having to deal with the bottomless admin that goes with it. Having your close friends and family actually get to enjoy your wedding day is one thing, but having them get to enjoy the journey—stress-free—along with you is another.</p>
+<h2>Will I lose control of my wedding?</h2>
+<p>Of course not! A wedding planner’s job is to come alongside you and take the burden off of your shoulders. You literally lean on us, but you have control over everything from picking your invitations to picking your vendors to your wedding design. It’s your wedding. You cast the vision and we do the research, leg work, and coordination necessary to make it happen.</p>
+<h2>My wedding venue has a coordinator and I’ve heard that I can just use him or her. Is that correct?</h2>
+<p>The most important thing to remember about your venue coordinator is that he or she is in charge of everything that happens inside of the venue. He or she is responsible for making sure your space is ready, you have everything you need in terms of your reservation, and that your space is returned to its usual condition after the wedding. Your venue coordinator will not help you plan your wedding beyond that. Sure, you might get some vendor recommendations, but the venue coordinator looks out for the venue. A wedding planner looks out for you.</p>
+<h2>Do I need the full-service package or will I be fine with a smaller package?</h2>
+<p>This all depends on your wedding vision, desires, and the amount of time you have. Most of my brides don’t realize all that goes into planning a wedding until after they’ve started the planning process. A typical wedding takes a wedding planner roughly 100+ hours to plan. Our full-service planning package is our most comprehensive and is great for brides who want design, planning, budget and vendor guidance, and support throughout the entire journey. It might not be a good fit for what you’re looking for, but we’ll discover that in your complimentary creative session and be able to recommend the right package for you.</p>
+<h2>Do you offer payment plans?</h2>
+<p>YES! Custom payment plans are available!</p>
+<h2><a href="connect.html">Schedule my complimentary creative consultation</a></h2>
+
+
+</article>
+<footer>
+<div id="social">
+    <a href="#">
+<img src="../images/FB.png">
+    </a>
+    <a href="#">
+<img src="../images/Insta.png">
+    </a>
+    <a href="#">
+<img src="../images/Pin.png">
+    </a>
+</div>
+<p id="footer_tag">
+	“For this is my prayer: that your love will flourish and that you will not only love much but well. 
+Live a lover's life; circumspect and exemplary, a life Jesus will be proud of.” 
+Philippians 1:9-11
+</p>
+</footer>
+</div>
+<!--<script type="text/javascript" src="../js/jquery.nyroModal.custom.js"></script>-->
+</body>
+</html>
